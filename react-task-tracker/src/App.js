@@ -1,9 +1,11 @@
 import Header from './compontents/Header'
+import Tasks from './compontents/Tasks'
 
 function App() {
   return (
     <div className="container">
-      <Header title ={'Task Tracker'}/>
+      <Header />
+      <Tasks />
     </div>
   );
 }
