@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Header from './compontents/Header'
 import Tasks from './compontents/Tasks'
 import AddTask from './compontents/AddTask'
+import Footer from './compontents/Footer'
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false)
@@ -83,6 +84,7 @@ function App() {
       <Tasks tasks={tasks} onDelete={deleteTask}
       onToggle={toggleReminder}/>) : (
         'No Tasks To Show')} 
+        <Footer />
     </div>
   );
 }
